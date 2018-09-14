@@ -1,0 +1,205 @@
+:root {
+	/*主题颜色*/
+	/* 抚子色*/
+	--theme_background_color: #86A697;
+	--theme_color: #ffffff;
+	--body_background_color: #FCFAF2;
+	--title_font_size: 2rem;
+	--fontsize: 1rem;
+	/*导航栏配置*/
+	--header: var(--theme_background_color, #000000);
+	--header_color: var(--theme_color, #ffffff);
+	--header_height: 3rem;
+	--header_width: 100vw;
+	--header_font_size: var(--title_font_size);
+	/*文章区配置*/
+	--section_width: 50vw;
+	--section_fixed_left:25vw;
+	/*底栏配置*/
+	--footer: var(--theme_background_color, #100000);
+	--footer_color: var(--theme_color, #ffffff);
+	--footer_height: 20vw;
+	--footer_width: 100vw;
+	--footer_font_size: var(--title_font_size);
+	/*Button配置*/
+	--button_font_size: var(--fontsize);
+	--button_width: 10rem;
+	--button_height: 3rem;
+	/*Button高,默认同时映射给字体高度.*/
+	/* --Button_Border_Radius:5px; */
+	/*按钮颜色*/
+	--button_tap: var(--theme_background_color);
+	--button_tap_hover: #A8D8B9;
+}
+
+::-webkit-scrollbar {
+	/*隐藏滚轮*/
+	display: none
+}
+
+
+
+
+
+/*默认body间距*/
+
+section,
+div {
+	/* border: 1px solid red; */
+}
+
+body {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	background-color: var(--body_background_color);	
+}
+
+header {
+	width: var(--header_width);
+	height: var(--header_height);
+	line-height: var(--header_height);
+	background-color: var(--header);
+	color: var(--header_color);
+	font-size: var(--header_font_size);
+	text-align: center;	
+}
+
+section {
+margin: auto;
+text-align: center;
+max-width: 500px;
+min-width: 200px;
+	/* width: var(--section_width); */
+	/* position: fixed; */
+	/* left: var(--section_fixed_left);	 */
+}
+
+section .article_title {
+	font-size: var(--title_font_size);
+	padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+section .article_info {
+	font-size: var(--fontsize);
+	padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+section .article_message {
+	padding: 0.5rem 2rem 0.5rem 2rem;
+}
+
+footer {
+	width: var(--footer_width);
+	height: var(--footer_height);
+	line-height: var(--footer_height);
+	background-color: var(--footer);
+	color: var(--footer_color);
+	font-size: var(--footer_font_size);
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+}
+
+
+
+.avatar {
+	font-size: 1rem;
+	width: var(--header_height);
+	height: var(--header_height);
+	border-radius: 100px;
+	color: var(--theme_background_color);
+	background-color: var(--theme_background_color);
+}
+
+
+.button {
+	background-color: var(--button_tap);
+	color: var(--theme_color);
+	text-align: center;
+	border-radius: var(--Button_Border_Radius);
+	font-size: var(--button_font_size);
+	width: var(--button_width);
+	height: var(--button_height);
+	line-height: var(--button_height);
+}
+
+.button:hover {
+	background-color: var(--button_tap_hover);
+	color: var(--theme_color);
+	text-align: center;
+	border-radius: var(--Button_Border_Radius);
+	font-size: var(--button_font_size);
+	width: var(--button_width);
+	height: var(--button_height);
+	line-height: var(--button_height);
+}
+
+
+
+
+/*响应式布局*/
+
+.fire-col-xs-1,
+.fire-col-xs-2,
+.fire-col-xs-3,
+.fire-col-xs-4,
+.fire-col-xs-5,
+.fire-col-xs-6,
+.fire-col-xs-7,
+.fire-col-xs-8,
+.fire-col-xs-9,
+.fire-col-xs-10,
+.fire-col-xs-11,
+.fire-col-5 {
+	position: relative;
+	float: left;
+}
+
+.fire-col-xs-12 {
+	width: 100%;
+	position: relative;
+}
+
+.fire-col-xs-11 {
+	width: 91.66666667%;
+}
+
+.fire-col-xs-10 {
+	width: 83.33333333%;
+}
+
+.fire-col-xs-9 {
+	width: 75%;
+}
+
+.fire-col-xs-8 {
+	width: 66.66666667%;
+}
+
+.fire-col-xs-7 {
+	width: 58.33333333%;
+}
+
+.fire-col-xs-6 {
+	width: 50%;
+}
+
+.fire-col-xs-5 {
+	width: 41.66666667%;
+}
+
+.fire-col-xs-4 {
+	width: 33.33333333%;
+}
+
+.fire-col-xs-3 {
+	width: 25%;
+}
+
+.fire-col-xs-2 {
+	width: 16.66666667%;
+}
+
+.fire-col-xs-1 {
+	width: 8.33333333%;
+}
